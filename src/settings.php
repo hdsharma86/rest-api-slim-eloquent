@@ -19,13 +19,17 @@ return [
         'db' => [
             'driver' => 'mysql',
             'host' => 'localhost',
-            'database' => 'rest-apis',
+            'database' => 'rest-api-slim',
             'username' => 'root',
-            'password' => 'hardev123',
+            'password' => 'root',
             'charset'   => 'utf8',
             'collation' => 'utf8_unicode_ci',
             'prefix'    => '',
             'strict' => false
+        ],
+        // jwt settings
+        "jwt" => [
+            'secret' => 'iamsuperherowhodoeverything'
         ]
     ],
 ];
