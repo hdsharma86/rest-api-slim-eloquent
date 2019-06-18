@@ -45,4 +45,21 @@ class UserController {
                         ->write(json_encode($create));
     }
 
+    function getUser($request,$response,$args){
+        return $response->withHeader('Content-Type', 'application/json')
+                        ->withStatus(200)
+                        ->write(json_encode(['test']));   
+    }
+
+    function updateUser($request, $response, $args){
+        return $response->withHeader('Content-Type', 'application/json')
+                        ->withStatus(200)
+                        ->write(json_encode(['Hello']));
+    }
+
+    function deleteUser($request, $response, $args){
+        return $response->withHeader('Content-Type', 'application/json')
+                        ->withStatus(200)
+                        ->write(json_encode(['Hello']));
+    }
 }

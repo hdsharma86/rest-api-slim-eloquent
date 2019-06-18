@@ -32,4 +32,8 @@ return function (App $app) {
     $container['UserController'] = function ($container) {
        return new \Src\controllers\UserController($container);
     };
+
+    $container['WelcomeController'] = function ($container) {
+       return new \Src\controllers\WelcomeController($container);
+    };
 };
